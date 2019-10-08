@@ -3,7 +3,6 @@ PATH
   specs:
     hecks_on_rails (0.1.0)
       hecks-active_model (= 0.1.0)
-      pry
       rails (~> 5.2.3)
 
 GEM
