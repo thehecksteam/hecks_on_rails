@@ -14,7 +14,7 @@ class Users::UsersController < ApplicationController
 
   # GET /users/users/new
   def new
-    @users_user = Domain[Users: :User].build
+    @users_user = Domain[Users: :User].build(name: nil)
   end
 
   # GET /users/users/1/edit
@@ -23,9 +23,9 @@ class Users::UsersController < ApplicationController
 
   # POST /users/users
   def create
-    @users_user = Users::User.new(users_user_params)
+    @users_user = Domain[Users: :User].build users_user_params.to_h.symbolize_keys
 
-    if @users_user.save
+    if Domain[@users_user].save
       redirect_to @users_user, notice: 'User was successfully created.'
     else
       render :new
@@ -50,7 +50,7 @@ class Users::UsersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_users_user
-      @users_user = Users::User.find(params[:id])
+      @users_user = Domain[Users: :User].fetch(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
