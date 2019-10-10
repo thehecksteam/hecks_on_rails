@@ -1,4 +1,4 @@
-require "rails/generators/rails/scaffold_controller/scaffold_controller_generator.rb"
+require 'rails/generators/rails/scaffold_controller/scaffold_controller_generator.rb'
 
 module Hecks
   class ScaffoldGenerator < Rails::Generators::ScaffoldControllerGenerator
