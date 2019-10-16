@@ -15,3 +15,5 @@ gemspec
 # gem 'byebug', group: [:development, :test]
 
 gem 'pry'
+gem 'soccer_season', '0.1.0'
+gem 'hecks-adapters-dynamodb', '0.1.0'
