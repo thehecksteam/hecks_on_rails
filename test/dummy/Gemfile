@@ -1,2 +1,0 @@
-gem 'pry'
-gem 'hecks-adapters-dynamodb', '0.1.0'

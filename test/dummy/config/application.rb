@@ -1,4 +1,5 @@
 require_relative 'boot'
+require 'soccer_season'
 
 require 'rails/all'
 

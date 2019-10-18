@@ -66,7 +66,7 @@ GEM
     coderay (1.1.2)
     colorize (0.8.1)
     concurrent-ruby (1.1.5)
-    crass (1.0.4)
+    crass (1.0.5)
     erubi (1.9.0)
     erubis (2.7.0)
     globalid (0.4.2)
@@ -157,7 +157,7 @@ DEPENDENCIES
   hecks-adapters-dynamodb (= 0.1.0)
   hecks_on_rails!
   pry
-  soccer_season (= 0.1.0)
+  soccer_season
   sqlite3
 
 BUNDLED WITH

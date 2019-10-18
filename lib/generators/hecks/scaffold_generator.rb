@@ -6,6 +6,7 @@ module Hecks
       populate_attributes
 
       super
+      invoke :resource, @_initializer[0], ['-s']
     end
 
     private

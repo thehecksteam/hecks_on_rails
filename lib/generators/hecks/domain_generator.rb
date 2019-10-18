@@ -10,7 +10,7 @@ module Hecks
 
           Domain = HecksApp::ApplicationPort
           Domain.config do
-            domain  #{Gem.loaded_specs.find { |_name, spec| spec.metadata.keys.include?('hecks_domain')}.try(:first).try(:capitalize)}
+            domain  #{Gem.loaded_specs.find { |_name, spec| spec.metadata.keys.include?('hecks_domain')}.try(:first).try(:camelcase)}
             adapter :#{Gem.loaded_specs.select { |_name, spec| spec.name.include?('hecks-adapters') }.try(:keys).try(:first).try(:split, 'hecks-adapters-').try(:last).try(:capitalize)}
           end
         DOMAIN_INITIALIZER

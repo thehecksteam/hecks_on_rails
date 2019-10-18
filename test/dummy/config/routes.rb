@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  namespace :players do
+    resources :players
+  end
   namespace :users do
     resources :users
   end

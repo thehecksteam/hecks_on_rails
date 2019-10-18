@@ -48,7 +48,7 @@ PLATFORMS
 DEPENDENCIES
   hecks-adapters-dynamodb (= 0.1.0)
   pry
-  soccer_season (= 0.1.0)
+  soccer_season
 
 BUNDLED WITH
    2.0.2
